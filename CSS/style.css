@@ -10,3 +10,7 @@ body {
 .text_size {
     font-size: 2vh;
 }
+
+.text-color {
+    color: rgba(84, 176, 229, 255);
+}
