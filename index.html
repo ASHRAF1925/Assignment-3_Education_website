@@ -26,13 +26,19 @@
         <!-- nav bar start  -->
         <nav>
             <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container">
+                <div class="container ">
                     <a class="navbar-brand fw-bold fs-1" href="#">Learn With Fun</a>
+
+                    <button class="btn btn-outline-primary fw-bold d-lg-none
+                    d-md-block d-none d-sm-none d-xl-none 
+                    " type="submit">Register</button>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
@@ -55,11 +61,12 @@
                             </li>
 
                         </ul>
-                        <form class="d-flex" role="search">
 
-                            <button class="btn btn-outline-primary fw-bold" type="submit">Register</button>
-                        </form>
+
+                        <button class="btn btn-outline-primary fw-bold" type="submit">Register</button>
+
                     </div>
+
                 </div>
             </nav>
         </nav>
@@ -78,28 +85,10 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner ">
+            <div class="carousel-inner  ">
 
-                <div class="carousel-item active">
-                    <img class="img-fluid darken-image " src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-
-                    <div
-                        class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
-                        <h3>Start Learning With Lots of Fun</h3>
-                        <p>The Courses are full of fun and easy to learn.Start the course and Make a Better Life!
-                        </p>
-                        <div class="btn  text-white fw-bold " style="background-color: rgb(40,154,221);"> Get
-                            Started
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-                <div class="carousel-item active">
-                    <img class="img-fluid darken-image " src="images/cover/rsz_3cover-2.png" class="d-block w-100"
+                <div class="carousel-item active ">
+                    <img class="img-fluid darken-image  " src="images/cover/cover-1.png" class="d-block w-100"
                         alt="...">
 
                     <div
@@ -118,8 +107,25 @@
 
                 </div>
                 <div class="carousel-item active">
-                    <img class="img-fluid darken-image " src="images/cover/rsz_2cover-3.png" class="d-block w-100"
-                        alt="...">
+                    <img class="img-fluid darken-image " src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+
+                    <div
+                        class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
+                        <h3>Start Learning With Lots of Fun</h3>
+                        <p>The Courses are full of fun and easy to learn.Start the course and Make a Better Life!
+                        </p>
+                        <div class="btn  text-white fw-bold " style="background-color: rgb(40,154,221);"> Get
+                            Started
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="carousel-item active">
+                    <img class="img-fluid darken-image " src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
 
                     <div
                         class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
@@ -371,8 +377,50 @@
 
                 </div>
                 <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center">
-                    <div class="btn rounded  bg-white">
+                    <!-- <div class="btn rounded  bg-white">
                         <h3 class="text-color fw-bold">Register Now</h3>
+                    </div> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn rounded  bg-white" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h3 class="text-color fw-bold">Register Now</h3>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Register Here</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Password">
+                                        </div>
+
+                                        <button type="submit " class="btn btn-primary mt-3">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -442,16 +490,16 @@
         <!-- student section end -->
 
         <!-- feedback section start  -->
-        <!-- <section class="feedback-section text-center mt-5">
+        <section class="feedback-section text-center mt-5">
             <h1>Some Students Feedback</h1>
             <p>These are valuable Feedbacks from Our Students</p>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container bg-danger ">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12  ">
+                    <div class="border rounded">
+                        <div class="container">
                             <div class="d-flex justify-content-between">
-                                <i class="fa-solid fa-quote-right"></i>
-                                <div>
+                                <img class="img-fluid" src="images/comma.png" alt="">
+                                <div style="color: gold;">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -461,22 +509,65 @@
                             </div>
 
                         </div>
+                        <div class="container">
+                            <p>This is a very good platform to increase your skills .I have accquired a lot of knowledge
+                                from this platform.It helps me a lot to increase my skills and knowledge.I recommend
+                                Learn
+                                with Fun .Join now to imporve your skills</p>
 
+                        </div>
+                        <div class=" d-flex ">
+                            <img class="img-fluid w-25" src="images/student/student-5.png" alt="">
+                            <div class="m-4">
+                                <h6>Mishal-AL-Rahman</h6>
+                                <p>Fullstack Web Developer</p>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="col-lg-6 col-md-12  ">
+                    <div class="border rounded">
+                        <div class="container">
+                            <div class="d-flex justify-content-between">
+                                <img class="img-fluid" src="images/comma.png" alt="">
+                                <div style="color: gold;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <p>This is a very good platform to increase your skills .I have accquired a lot of knowledge
+                                from this platform.It helps me a lot to increase my skills and knowledge.I recommend
+                                Learn
+                                with Fun .Join now to imporve your skills</p>
+
+                        </div>
+                        <div class=" d-flex ">
+                            <img class="img-fluid w-25" src="images/student/student-6.png" alt="">
+                            <div class="m-4">
+                                <h6>MRS.LAdy</h6>
+                                <p>UI/UX Developer</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
 
-        </section> -->
+
+        </section>
+
         <!-- feedback section end -->
 
         <!-- frequently asked question section start -->
@@ -726,11 +817,11 @@
         </p>
         <p class="text-white">Privacy Ploicy | Terms of use</p>
         <div class="d-flex container w-50 justify-content-between ">
-            <i class="fa-brands fa-facebook-f text-white"></i>
-            <i class="fa-brands fa-twitter text-white "></i>
-            <i class="fa-brands fa-linkedin text-white "></i>
-            <i class="fa-brands fa-youtube text-white"></i>
-            <i class="fa-brands fa-discord text-white"></i>
+            <i class="fa-brands fa-facebook-f text-white display-5"></i>
+            <i class="fa-brands fa-twitter text-white display-5 "></i>
+            <i class="fa-brands fa-linkedin text-white display-5 "></i>
+            <i class="fa-brands fa-youtube text-white display-5"></i>
+            <i class="fa-brands fa-discord text-white display-5"></i>
 
         </div>
 

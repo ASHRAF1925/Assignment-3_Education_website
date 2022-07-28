@@ -3,8 +3,10 @@ body {
 
 }
 
+
 .darken-image {
     filter: brightness(50%) !important;
+
 }
 
 .text_size {
